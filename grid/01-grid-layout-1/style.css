@@ -45,3 +45,31 @@ body, html {
 .footer {
   background-color: #393f4d;
 }
+
+/*
+SOL
+*/
+
+.container {
+  display: grid;
+  gap: 15px;
+  grid-template: 100px 100px 500px 100px / 250px 750px;
+}
+
+.container > div {
+  border: 5px solid brown;
+}
+
+.header {
+  grid-column-start: 1;
+  grid-column-end: 3;
+}
+
+.sidebar {
+  grid-row-start: 2;
+  grid-row-end: 4;
+}
+
+.footer {
+  grid-column: 1 / 3;
+}
