@@ -89,3 +89,58 @@
   font-size: 13px;
   font-weight: normal;
 }
+
+/* SOL */
+
+.container {
+  display: grid;
+  grid-template-columns: 1fr 4fr;
+  gap: 4px;
+}
+
+.header {
+  grid-column: 1 / 3;
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+}
+
+.header > .logo {
+  justify-self: left;
+}
+
+.header ul {
+  list-style-type: none;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+
+.nav ul {
+  list-style-type: none;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+}
+
+.sidebar {
+  grid-row: 2 / 4;
+  display: grid;
+  gap: 15px;
+}
+
+.photo, .side-content {
+  display: grid;
+  align-items: center;
+}
+
+.article {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 10px;
+}
+
+.article > .card {
+  height: 200px;
+}
+
+.footer {
+  grid-column: 1 / 3;
+}
